@@ -51,7 +51,7 @@ const SubjectList = () => {
         accessorKey: "description",
         size: 100,
         header: ()=> <p className="column-title ml-2">Description</p>,
-        cell: ({ getValue  }) => <span className="trancate line-clamp-2">{getValue<string>()}</span>,
+        cell: ({ getValue  }) => <span className="truncate line-clamp-2">{getValue<string>()}</span>,
       }, 
     ],[]),
     refineCoreProps: {
@@ -77,7 +77,7 @@ const SubjectList = () => {
       <h1 className="page-title">Subjects</h1>
       <div className="intro-row">
         <p className="intro-text">Manage the subjects offered in the school, including their details and departments.</p>
-      <div className="action-row">
+      <div className="actions-row">
         <div className="search-field border-2">
           <Search className="search-icon" />
           <input
